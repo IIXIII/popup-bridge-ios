@@ -1,9 +1,9 @@
 import Foundation
 import AuthenticationServices
 
-class WebAuthenticationSession: NSObject {
+public class WebAuthenticationSession: NSObject {
 
-    var authenticationSession: ASWebAuthenticationSession?
+    public var authenticationSession: ASWebAuthenticationSession?
 
     func start(
         url: URL,
