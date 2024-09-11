@@ -13,7 +13,7 @@ public class POPPopupBridge: NSObject, WKScriptMessageHandler {
     private let messageHandlerName = "POPPopupBridge"
     private let hostName = "popupbridgev1"    
     private let webView: WKWebView
-    private var webAuthenticationSession: WebAuthenticationSession = WebAuthenticationSession()
+    public var webAuthenticationSession: WebAuthenticationSession = WebAuthenticationSession()
     
     private var returnBlock: ((URL) -> Void)? = nil
     
