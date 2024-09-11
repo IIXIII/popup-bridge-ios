@@ -22,7 +22,7 @@ public class WebAuthenticationSession: NSObject {
             }
         }
 
-        authenticationSession?.prefersEphemeralWebBrowserSession = true
+        authenticationSession?.prefersEphemeralWebBrowserSession = false
         authenticationSession?.presentationContextProvider = context
 
         authenticationSession?.start()
